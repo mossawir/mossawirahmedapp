@@ -47,7 +47,7 @@ function App() {
 
           {count >= 10 && (
             <p style={{ color: 'red', marginTop: '10px', fontWeight: 'bold' }}>
-              maximum Limited is reached
+              maximum cart limit is reached! refresh the browser.
             </p>
           )}
         </div>
