@@ -6,9 +6,11 @@ import './App.css'
 
 function App() {
  const name = 'Sara';
-  const items = 3;
+  
+   const [count, setCount] = useState(0);
+  const message = `${name} has ${count} items in cart`;
 
-  const message = `${name} has ${items} items in cart`;
+
 
   return (
     <>
@@ -26,6 +28,16 @@ function App() {
         </div>
      <div className="app">
       <h1>{message}</h1>
+
+      <div>
+        <button
+          type="button"
+          className="counter"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          Count is {count}
+        </button>
+      </div>
     </div>
       </section>
 
